@@ -1,0 +1,265 @@
+﻿
+<!DOCTYPE html>
+<title>Online Gift Shop(Details)</title>
+<head>
+<!-- ========================  CSS Files  ========================== -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/flexslider.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" href="styleChanger/changer.css" />
+<link rel="stylesheet" type="text/css" href="styleChanger/colorpicker/colorpicker.css" />
+<style id="cFontStyleWColor1" type="text/css">
+a, .sf-menu>li>a:hover, .sf-menu>li.current>a, .sf-menu>li.sfHover>a, .sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a, .more, .color_orange, ul.list-box .price-text .price, .posttime h1, .smalldate, .posttitle a:hover, .caption.big_orange, .caption.very_big_orange, .button.white, .filterable li a:hover, .filterable li.current a, .list a:hover, .botlink a:hover {
+	color:#b961dd;
+}
+</style>
+<style id="cFontStyleWColor2" type="text/css">
+.view-tenth .mask, .pic:hover, .pic2:hover, .skills li span, .orange, .social a:hover img, .button.orange, .tabs-nav li.active a, .tag-cloud a:hover {
+	background-color:#b961dd;
+}
+</style>
+<style id="cFontStyleWColor3" type="text/css">
+.color_orange, .circle, .heading_line span, .filterable li a:hover, .filterable li.current a {
+	border-color:#b961dd;
+}
+</style>
+<style id="cFontStyleWColor4" type="text/css">
+body {
+}
+
+.flexslider {
+	margin: 0 0 50px 0;
+	padding: 0;
+	height:450px;
+}
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+}
+.flexslider {
+	margin: 0 0 0px;
+	position: relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	-o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	zoom: 1;
+}
+
+.style1 {font-size: 28px}
+</style>
+<!-- ========================  JS Files  =========================== -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.zflickrfeed.min.js"></script>
+<script type="text/javascript" src="styleChanger/colorpicker/colorpicker.js"></script>
+<script type="text/javascript" src="styleChanger/changer.js"></script>
+<script type="text/javascript">
+      $(function() { 
+
+
+    
+/*Quick Contact on top*/
+    $('a.contact-bar-tab').hover(function() {
+        $(this).parent().parent().toggleClass("close");
+    });
+    var expand = $('#contact-wrap .qcontact');
+    expand.css("display", "none");
+    $('a.contact-bar-tab').click(function() {
+        if (expand.is(":visible")) {
+            expand.slideUp(500, 'easeInOutExpo');
+            $(this).removeClass("close");
+            $(this).parent().parent().parent().removeClass("close");
+        } else {
+            expand.slideDown(500, 'easeInOutExpo');
+            $(this).addClass("close");
+            $(this).parent().parent().parent().addClass("close");
+        };
+        return false;
+    });
+    
+    
+/*jQuery init*/
+    $('body').removeClass('sg-nojs');
+    $(".proj-img").fitVids();
+    
+
+});
+	$(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+		controlNav: true,		
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+
+<!--============================== Header =================================-->
+<header>
+   <div class="container_12">
+   
+    <h1><a class="logo ucase" href="index.html">Gift Shop</a></h1>
+  
+    <div class="nav_wrap">
+      <div class="nav_wrap_inner">
+        <div class="responsibe_block">
+          <div class="responsibe_block_inner"> <a href="#" class="resp_navigation"></a> </div>
+        </div>
+        <nav class="main-menu">
+          <ul class="sf-menu">
+            
+			<li><a href="index.html" data-description="Start here">Home</a></li>
+            <li><a href="Products.html" data-description="Our Quality Products">Products</a></li>
+            
+            <li><a href="Aboutus.html" data-description="Services">Aboutus</a></li>
+            <li><a href="Contact.html" data-description="Address">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--============================== Page Title =================================-->
+
+<div class="wrapper bg_title bg_grey_light">
+  <div class="container_12 pagetitle">
+
+      <h1 class="color_white font_heading02">Product</h1>
+      <p>
+	  <a href="index.html" class="wlink">home</a> &rarr; <a href="#" class="wlink">Product Details</a></p>
+
+
+  </div>
+</div>
+<!--============================== Content ================================-->
+<div class="brd2"></div>
+<div class="wrapper bg_white">
+  <section class="cont_pad2">
+    <div class="container_12 align_center">
+      <h2 class="color_black font_heading02 lh0">We make premier and unique Watches ...<span class="color_orange ucase">oo yeah!</span></h2>
+      <h6 style="padding:0 50px;">Aura Watches Make Various Type of Watches Such As Premier, Sports, Ladies etc.</h6>
+    </div>
+  </section>
+  <div class="brd3"></div>
+  <section class="cont_pad">
+    <div class="container_12">
+      
+      <article class="grid_8">
+      <div class="heading_line">
+        <h3 class="color_black ucase font_heading"><span>A-Black-Aw02</span></h3>
+      </div>
+        <div class="flexslider">
+          <ul class="slides">
+		  <div style="width:400px; height:400px"><img src="images/Rings/pic3.png"/></div>
+            <li> <img src='Watches/Children/1_176871_ZM.JPG'" alt="header" height="450"/> </li>
+            <li> <img src="http://placehold.it/620x450" alt="header" height="450"/> </li>
+            <li> <img src="http://placehold.it/620x450" alt="header" height="450"/> </li>
+            <li> <img src="http://placehold.it/620x450" alt="header" height="450"/> </li>
+            <li> <img src="http://placehold.it/620x450" alt="header" height="450"/> </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="grid_4">
+        <div class="heading_line">
+          <h3 class="color_black ucase font_heading"><span>Description</span></h3>
+        </div>
+               <p> Time Accuracy: Approx. +/-5 seconds per year
+when worn for 12 hours per day at +5 to +35°C
+(accuracy may decrease slightly if used under conditions other than described above)
+
+ETA/Longines does not add extra conditions - like wearing the watch for certain amount of time per day - to its +/-10 seconds per year specification.
+<br><br>
+Price –229$
+.</p>
+      
+	          <a href="Specifications\A-Black-Aw02.doc" class="button orange">Download Specification</a> 
+			  <ul>
+				<li><a href="Specifications\Aura Price List.xlsx">Price List</a></li>
+			</ul>
+
+
+			  
+			  </article>
+    </div>
+  </section>
+
+</div>
+
+<!--============================== Footer =================================-->
+
+<div class="wrapper bg_grey cont_pad2">
+  <div class="container_12 ">
+    
+    <article class="grid_3">
+      <h3 class="color_white font_heading ucase">About Us</h3>
+      <p class="txt12">Aura Watches is an artist with a passion for jewelry. Not only is he passionate about collecting vintage jewelry, he also designs exquisite modern and vintage-inspired masterpieces.</p>
+
+        
+    
+    </article>
+    <article class="grid_3">
+      <h3 class="color_white font_heading ucase">Awards</h3>
+      <p>We're proud that Aura Watches received awards & recognition for its unique, first-of-its-kind smart watch concept during CES 2013 including CNet " Best of CES Finalist" and Popular Mechanics " Editor's Choice".</p>
+		</article>
+    <article class="grid_3">
+      <h3 class="color_white font_heading ucase">Latest Watches</h3>
+	  <table width="200" border="0">
+  <tr>
+    <td><img src="Watches/Footer.png"  /></td>
+   </tr>
+</table>
+	  
+      
+    </article>
+   </article>
+    <article class="grid_3 last-col">
+      <h3 class="color_white font_heading ucase">Get In Touch</h3>
+      <p>Mobile: 0097-1522639636 </p>
+      <p>Office: 0097-143433927</p>
+	  <p>Email:nomitariq@gmail.com</p>
+     
+    </article>
+  </div>
+</div>
+<div class="wrapper bg_black" style="position:relative; z-index:9;">
+  <div class="container_12 cont_pad3" >
+    <article class="grid_5 txt11"> &nbsp;©&nbsp;  2017 <span class="color_orange"><a href="" title="hnh web_designer">Online Gift Shop</a></span>. All Rights Reserved. </article>
+    <article class="grid_5last-col txt11  align_right ">
+    	<ul class="botlink">
+        	 <li><a href="index.html" data-description="Start here">Home</a></li>
+            <li><a href="Products.html" data-description="Our Quality Products">Products</a></li>
+                        <li><a href="Aboutus.html" >About Us</a></li>
+
+            <li><a href="Contact.html" data-description="Address">Contact</a></li>
+        </ul>
+    </article>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
